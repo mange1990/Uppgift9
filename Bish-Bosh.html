@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Bish-Bosh</title>
+    </head>
+    <body>
+        <script>
+            let outputString = "";
+            for(let i = 1; i <= 100; i++){
+                if(((i % 3) === 0) && ((i % 4) === 0)){
+                    outputString += " Bish-Bosh​ ";
+                }
+                else if((i % 3) === 0 ){
+                    outputString += " Bish ";
+                }else if((i % 4) === 0){
+                    outputString += " Bosh ";
+                }else {
+                    outputString += ` ${i} `;
+                }
+
+            }
+
+
+            alert(outputString);
+        </script>
+    </body>
+</html>
